@@ -3,6 +3,7 @@ import Header from "./components/layout/Header.tsx";
 import Footer from "./components/layout/footer.tsx";
 import Home from "./views/home.tsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Login from "./views/login.tsx";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
                 <Header/>
                     <Routes>
                         <Route path={"/"} element={<Home/>}/>
+                        <Route path={"/login"} element={<Login/>}/>
                     </Routes>
 
                 <Footer/>
