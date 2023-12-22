@@ -15,11 +15,6 @@ class Login extends React.Component<any, any> {
 
 
                     <div className={'mt-5 min-w-[300px]'}>
-                      {/*  <div className={'m-2'}>
-                            <label htmlFor="email" className={'block'}>email <span className={'text-red-600'}>*</span></label>
-                            <input type="text" id='email' placeholder='email' className={'block border border-green-300 outline-none focus:border-green-600 h-10 w-full' }/>
-                        </div>*/}
-
                     <Input
                         type={'text'}
                         label={'Email'}
@@ -28,12 +23,13 @@ class Login extends React.Component<any, any> {
                         optional={true}
                     />
 
-                        <div className={'mt-5 min-w-[300px]'}>
-                            <div className={'m-2'}>
-                                <label htmlFor="email" className={'block'}>Password <span className={'text-red-600'}>*</span></label>
-                                <input type="text" id='password' placeholder='password' className={'block border border-green-300 outline-none focus:border-green-600 h-10 w-full' }/>
-                            </div>
-                        </div>
+                        <Input
+                            type={'text'}
+                            label={'Password'}
+                            name={'password'}
+                            placeholder={'Enter Password'}
+                            optional={true}
+                        />
                     </div>
 
 

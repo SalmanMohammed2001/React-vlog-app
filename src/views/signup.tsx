@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Input from "../components/input/input.tsx";
 
 class Signup extends React.Component<any, any> {
 
@@ -19,33 +20,16 @@ class Signup extends React.Component<any, any> {
 
 
                         <div className={'flex'}>
-                            <div className={'m-2 '}>
-                                <label htmlFor='fname' className={'block'}>First Name</label>
-                                <input type="text" id='fname' placeholder='Enter First Name' className={'block border  border-green-300 outline-none h-10 w-full focus:border-green-600'}/>
-                            </div>
 
-                            <div className={'m-2'}>
-                                <label htmlFor='lname' className={'block'}>Last Name</label>
-                                <input type="text" id='lname' placeholder='Enter Last Name' className={'block border  border-green-300 outline-none h-10 w-full focus:border-green-600'}/>
-                            </div>
+                            <Input type={"text"} name={"fname"} placeholder={"First Name"} label={"First Name"} optional={false}/>
+                            <Input type={"text"} name={"lname"} placeholder={"Last Name"} label={"Last Name"} optional={false}/>
+
+
                         </div>
 
-
-
-                        <div className={'m-2 mt-3'}>
-                            <label htmlFor='username' className={'block'}>User Name</label>
-                            <input type="text" id='username' placeholder='Enter User Name' className={'block border  border-green-300 outline-none h-10 w-full focus:border-green-600'}/>
-                        </div>
-
-                        <div className={'m-2 mt-3'}>
-                            <label htmlFor='email' className={'block'}>Email</label>
-                            <input type="text" id='email' placeholder='Enter Email' className={'block border  border-green-300 outline-none h-10 w-full focus:border-green-600'}/>
-                        </div>
-
-                        <div className={'m-2 mt-3'}>
-                            <label htmlFor='password' className={'block'}>Password</label>
-                            <input type="text" id='password' placeholder='Enter Password' className={'block border  border-green-300 outline-none h-10 w-full focus:border-green-600'}/>
-                        </div>
+                        <Input type={"text"} name={"username"} placeholder={"User Name"} label={"User Name"} optional={false}/>
+                        <Input type={"text"} name={"email"} placeholder={"email"} label={"Enter Email"} optional={false}/>
+                        <Input type={"password"} name={"password"} placeholder={"password"} label={"Enter password"} optional={false}/>
 
                     </div>
 
