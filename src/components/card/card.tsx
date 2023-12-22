@@ -1,16 +1,19 @@
 import React from "react";
 
 
-class Card extends React.Component<any,any>{
+interface props{
+    title?:string,
+    content?:string
+}
+
+class Card extends React.Component<props,any>{
 
     render() {
 
         return(
             <div className={'border-solid border-2  w-72 p-5 m-5'}>
-                <h1 className={'font-bold text-2xl'}>Learn Typescript(+React)</h1>
-                <p className={'my-5'}>Lorem ipsum dolor sit amet, consecrate radicalising elite. Blandish, ea arum est ex explicable
-                    fugal libero magnum qui qua, quo, sed sit llama Ande. Beate dolorous inventory
-                    necessitates cisgendered voluptuous.</p>
+                <h1 className={'font-bold text-2xl'}>{this.props.title}</h1>
+                <p className={'my-5'}>{this.props.content}</p>
                 <button className={'bg-green-600  p-3 text-white'}>Read More</button>
             </div>
         )
