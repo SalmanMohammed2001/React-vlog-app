@@ -5,6 +5,7 @@ import Home from "./views/home.tsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Login from "./views/login.tsx";
 import Signup from "./views/signup.tsx";
+import MyArticle from "./views/my-article.tsx";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
                         <Route path={"/"} element={<Home/>}/>
                         <Route path={"/login"} element={<Login/>}/>
                         <Route path={"/signup"} element={<Signup/>}/>
+                        <Route path={"/articles"} element={<MyArticle/>}/>
                     </Routes>
 
                 <Footer/>
