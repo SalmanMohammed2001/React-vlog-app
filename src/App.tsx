@@ -4,6 +4,7 @@ import Footer from "./components/layout/footer.tsx";
 import Home from "./views/home.tsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Login from "./views/login.tsx";
+import Signup from "./views/signup.tsx";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
                     <Routes>
                         <Route path={"/"} element={<Home/>}/>
                         <Route path={"/login"} element={<Login/>}/>
+                        <Route path={"/signup"} element={<Signup/>}/>
                     </Routes>
 
                 <Footer/>
